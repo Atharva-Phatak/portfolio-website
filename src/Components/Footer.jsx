@@ -3,6 +3,7 @@ import {VscGithub} from 'react-icons/vsc'
 import {FaLinkedin} from 'react-icons/fa'
 import {SiGmail} from "react-icons/si"
 import {BsFillPersonFill} from "react-icons/bs"
+
 const Footer = () => {
     const links = [
         {
@@ -42,8 +43,8 @@ const Footer = () => {
                 <BsFillPersonFill size={30} color =  "#32de84"/>
                 </>
             ),
-            href:  '../Assets/MyResume.pdf',
-            download: true,
+            href: '/resume.pdf',
+            download: false,
         }
     ]
 

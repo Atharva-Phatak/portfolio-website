@@ -43,8 +43,8 @@ const Social = () => {
                 Resume <BsFillPersonFill size={35} color = "#32de84"/>
                 </>
             ),
-            href:  '../Assets/MyResume.pdf',
-            download: true,
+            href:  '/resume.pdf',
+            download: false,
         }
     ]
     return (

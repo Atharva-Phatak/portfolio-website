@@ -40,7 +40,7 @@ const About = () => {
                 <FaGithub size={30} />
             </button>
             <button className="flex items-center justify-center rounded-full shadow-md  shadow-[#32de84] hover:scale-110 duration-200 p-3 
-            cursor-pointer" onClick={() => openInNewTab('../Assets/MyResume.pdf')}>
+            cursor-pointer" onClick={() => openInNewTab('/resume.pdf')}>
                 <BsFillPersonFill size={30} color = "#32de84"/>
             </button>
         </div>

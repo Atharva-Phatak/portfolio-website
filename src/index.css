@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+    background: #242124;
+    @apply tracking-wider text-gray-200;
+  }
+}
+@layer components {
+  @keyframes updown {
+    0% {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes ufoAnimation {
+    0% {
+      offset-distance: 0%;
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      offset-distance: 100%;
+      opacity: 1;
+    }
+  }
+
+  .ufoMotion {
+    offset-path: path("M-60,20 C20,50 1000,500 1000, -200");
+    //offset-path: path("M-100,-100 V200");
+    animation: ufoAnimation 8000ms linear infinite;
+    height: 200px;
+    opacity: 0;
+    animation-delay: 3s;
+  }
+  .updown {
+    animation: updown 3s linear infinite;
+  }
+  .spin {
+    animation: spin 10s linear infinite;
+  }
+
+  @media only screen and (max-width: 1026px) {
+    .ufoMotion {
+      display: none;
+    }
+  }
 }

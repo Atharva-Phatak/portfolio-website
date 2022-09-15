@@ -5,7 +5,7 @@ const SkillComponent = ({title, skills}) => {
     
     return (
     <div className="my-3">
-        <p className='text-xl font-bold border-b-4 border-blue-500 p-2  inline'>
+        <p className='text-xl font-bold   border-blue-500 p-2 inline lg:border-b-4 sm:border-b-2'>
             {title}
         </p>
     <div className='grid grid-col-2 sm:grid-cols-3 gap-8 text-center py-8 px-8 sm:px-0'>

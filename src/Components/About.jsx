@@ -46,7 +46,7 @@ const About = () => {
         </div>
         </div>
         <div className="w-full lg:w-1/2 h-full rounded-xl p-4">
-            <ol className="list list-disc font-semibold">
+            <ol className="list list-disc text-xl font-semibold tracking-wide" >
                 <li className="text-justify py-1">
                     👋 Hi, my name is Atharva Phatak.
                 </li>
@@ -54,14 +54,11 @@ const About = () => {
                     🎓 I am currently pursuing my Master's in Computer Science at Lakehead University and will be graduating in April 2023.
                 </li>
                 <li className="text-justify py-1">
-                    🪄 I am passionate about implementing software solutions to challenging problems.
+                    👨‍💻 I am currenty working as a Research Assistant at <>&nbsp;</> 
+                    <a className = "underline text-blue-600" href="https://datalab.science/">DaTALab</a><>&nbsp;</> and my research is focused in applications of Text Simplification methods to empower medical research.
                 </li>
                 <li className="text-justify py-1">
-                    👨‍💻 I am currenty working as a Research Assistant at  
-                    <a className = "mx-1 underline text-blue-600" href="https://datalab.science/">DaTALab</a>and my research is focused in applications of Text Simplification methods to empower medical research.
-                </li>
-                <li className="text-justify py-1">
-                    🖥️ I aim to be a part of a dynamic team as a Software Engineer, where I can apply and enhance my skills and learnings to 
+                    🖥️ I aim to be a part of a dynamic team, where I can apply and enhance my skills and learnings to 
                     tackle complex problems and contribute in building something that makes the life of the user easier.
                 </li>
                 <li className="text-justify py-1">

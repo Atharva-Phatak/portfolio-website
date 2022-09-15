@@ -63,12 +63,12 @@ const Projects = () => {
           
           >
             <div className='rounded-lg'>
-              <img src={image} alt="" className=" rounded-md object-scale-down h-48 w-96 p-4 m-4" />
+              <img src={image} alt="" className="rounded-md object-scale-down h-48 w-96 p-4 m-4" />
             </div> 
             <h1 className="text-2xl text-center lg:text-3xl my-8 capitalize">{title}</h1>
             <p className="text-lg text-justify">{subtitle}</p>
             <div className="flex items-center justify-center">
-                <button className="px-6 py-3 m-4 duration-200 hover:scale-105" onClick={() => openInNewTab(link)}>
+                <button className="px-6 py-3 m-4  hover:scale-105 duration-200" onClick={() => openInNewTab(link)}>
                     <FaGithub size = {30} />
                 </button>
               </div>

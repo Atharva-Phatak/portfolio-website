@@ -88,7 +88,7 @@ const Projects = () => {
                 </button>
                 {(() => {if(deployed !== ""){
                   return (<button className="px-6 py-3 m-4  hover:scale-105 duration-200" onClick={() => openInNewTab(deployed)}>
-                    <img src = {rocket} width={35} height={35} />
+                    <img src = {rocket} width={35} height={35} alt="deployment"/>
                   </button>)
                 }}) ()}
               </div>

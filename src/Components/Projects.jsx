@@ -5,7 +5,9 @@ import MangaColorizer from "../Assets/Projects/MangaColorizer.png"
 import Glassdoor from "../Assets/Projects/glassdoor.png"
 import supplements from "../Assets/Projects/SupplementPrices.png"
 import melanoma from "../Assets/Projects/melanoma.png"
-import {FaGithub} from "react-icons/fa"
+import anime from "../Assets/Projects/anime.png"
+import rocket from "../Assets/icons/rocket.png"
+import {FaGithub, FaRocket} from "react-icons/fa"
 const Projects = () => {
 
   const projects = [
@@ -14,35 +16,48 @@ const Projects = () => {
       image: TorchFlare,
       title : 'TorchFlare',
       subtitle : 'A simple, beginner-friendly, and easy-to-use PyTorch Framework train your models effortlessly.',
-      link : 'https://github.com/Atharva-Phatak/torchflare'
+      link : 'https://github.com/Atharva-Phatak/torchflare',
+      deployed: ""
     },
     {
       id: 2,
-      image : MangaColorizer,
-      title : "MangaColorizer",
-      subtitle: 'Colorize Manga using Deep Learning 🚀',
-      link: 'https://github.com/Atharva-Phatak/Manga-Colorizer'
+      image: anime,
+      title: 'AnimeGAN',
+      subtitle: "Convert photos to Anime style using Deep Learning 📸.",
+      link: 'https://github.com/Atharva-Phatak/AnimeGAN',
+      deployed: "https://huggingface.co/spaces/Atharva-Phatak/AnimeGAN"
     },
     {
       id: 3,
+      image : MangaColorizer,
+      title : "MangaColorizer",
+      subtitle: 'Colorize Manga using Deep Learning 🚀',
+      link: 'https://github.com/Atharva-Phatak/Manga-Colorizer',
+      deployed: ""
+    },
+    {
+      id: 4,
       image : Glassdoor,
       title : "Glassdoor",
       subtitle: 'Scrape and Analyze Glassdoor Job Postings to be more Job ready 😉',
-      link: 'https://github.com/Atharva-Phatak/Analysing-Glassdoor-Jobs'
+      link: 'https://github.com/Atharva-Phatak/Analysing-Glassdoor-Jobs',
+      deployed: ""
     },
     {
       id: 5,
       image : supplements,
       title : "Supplements Price Predictor",
       subtitle: 'Collect, Analyze and Predict Prices of Nutrition Supplements 🏋️',
-      link: 'https://github.com/Atharva-Phatak/Supplements-Price-Predictor'
+      link: 'https://github.com/Atharva-Phatak/Supplements-Price-Predictor',
+      deployed: ""
     },
     {
       id: 6,
       image : melanoma,
       title : "Is that a Melanoma ?",
       subtitle: 'Classify Skin Lesions Using Deep Learning 👨‍⚕️',
-      link: 'https://github.com/Atharva-Phatak/Is-That-A-Melanoma'
+      link: 'https://github.com/Atharva-Phatak/Is-That-A-Melanoma',
+      deployed: ""
     },
   ]
   const openInNewTab = (url) => {
@@ -56,7 +71,7 @@ const Projects = () => {
     subtitle=""
     >
       <div className='grid sm:grid-cols-3 gap-12 text-white'>
-        {projects.map(({id, image, title, subtitle, link}) => (
+        {projects.map(({id, image, title, subtitle, link, deployed}) => (
           <div
           key = {id}
           className="group bg-[#282C35] rounded-lg flex flex-col items-center justify-center p-3 text-center "
@@ -71,6 +86,11 @@ const Projects = () => {
                 <button className="px-6 py-3 m-4  hover:scale-105 duration-200" onClick={() => openInNewTab(link)}>
                     <FaGithub size = {30} />
                 </button>
+                {(() => {if(deployed !== ""){
+                  return (<button className="px-6 py-3 m-4  hover:scale-105 duration-200" onClick={() => openInNewTab(deployed)}>
+                    <img src = {rocket} width={35} height={35} />
+                  </button>)
+                }}) ()}
               </div>
           </div>
         ))}

@@ -7,7 +7,7 @@ import supplements from "../Assets/Projects/SupplementPrices.png"
 import melanoma from "../Assets/Projects/melanoma.png"
 import anime from "../Assets/Projects/anime.png"
 import rocket from "../Assets/icons/rocket.png"
-import {FaGithub, FaRocket} from "react-icons/fa"
+import {FaGithub} from "react-icons/fa"
 const Projects = () => {
 
   const projects = [

@@ -14,6 +14,7 @@ import dvc from "../Assets/Skills/dvc.png"
 import css from "../Assets/Skills/css-3.png"
 import mlflow from "../Assets/Skills/mlflow.png"
 import jupyter from "../Assets/Skills/jupyter.png"
+import node from "../Assets/Skills/node.png"
 
 const languages = [
     {
@@ -101,6 +102,13 @@ const WebDevelopement = [
             style : "shadow-cyan-500"
 
         },
+        {
+            id: 6,
+            src: node,
+            title: "NodeJS",
+            style: "shadow-green-600"
+            
+        }
 
 ]
 

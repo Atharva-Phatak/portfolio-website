@@ -7,6 +7,7 @@ import supplements from "../Assets/Projects/SupplementPrices.png"
 import melanoma from "../Assets/Projects/melanoma.png"
 import anime from "../Assets/Projects/anime.png"
 import rocket from "../Assets/icons/rocket.png"
+import expense from "../Assets/Projects/expense.png"
 import {FaGithub} from "react-icons/fa"
 const Projects = () => {
 
@@ -22,13 +23,21 @@ const Projects = () => {
     {
       id: 2,
       image: anime,
-      title: 'AnimeGAN',
-      subtitle: "Convert photos to Anime style using Deep Learning 📸.",
+      title: 'AnimeME',
+      subtitle: "Apply photo animation using Deep Learning 📸.",
       link: 'https://github.com/Atharva-Phatak/AnimeGAN',
       deployed: "https://huggingface.co/spaces/Atharva-Phatak/AnimeGAN"
     },
     {
       id: 3,
+      image: expense,
+      title: 'ExpenseWise',
+      subtitle: "A simple webapp to start budgeting.",
+      link: 'https://github.com/Atharva-Phatak/expensewise-backend',
+      deployed: "https://expensewise.onrender.com/"
+    },
+    {
+      id: 4,
       image : MangaColorizer,
       title : "MangaColorizer",
       subtitle: 'Colorize Manga using Deep Learning 🚀',
@@ -36,7 +45,7 @@ const Projects = () => {
       deployed: ""
     },
     {
-      id: 4,
+      id: 5,
       image : Glassdoor,
       title : "Glassdoor",
       subtitle: 'Scrape and Analyze Glassdoor Job Postings to be more Job ready 😉',
@@ -44,7 +53,7 @@ const Projects = () => {
       deployed: ""
     },
     {
-      id: 5,
+      id: 6,
       image : supplements,
       title : "Supplements Price Predictor",
       subtitle: 'Collect, Analyze and Predict Prices of Nutrition Supplements 🏋️',
@@ -52,7 +61,7 @@ const Projects = () => {
       deployed: ""
     },
     {
-      id: 6,
+      id: 7,
       image : melanoma,
       title : "Is that a Melanoma ?",
       subtitle: 'Classify Skin Lesions Using Deep Learning 👨‍⚕️',

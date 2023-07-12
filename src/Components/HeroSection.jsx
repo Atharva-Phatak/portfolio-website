@@ -27,7 +27,7 @@ const HeroSection = () => {
                     <div className='flex py-2 justify-center font-extrabold lg:text-2xl sm:text-xl'>
                         <Typewriter
                         options={{
-                            strings: ['I am Atharva Phatak', "Software Developer"],
+                            strings: ['I am Atharva Phatak', "Machine Learning Engineer"],
                             autoStart: true,
                             loop: true,
                         }}

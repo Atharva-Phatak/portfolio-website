@@ -62,11 +62,10 @@ const About = () => {
                     tackle complex problems and contribute in building something that makes the life of the user easier.
                 </li>
                 <li className="text-justify py-1">
-                    🌐 During my free time, you can find me contributing to Open Source libraries or listening to music 🎵. 
+                    🌐 During my free time, you can find me contributing to Open Source libraries or listening to music 🎵 or learning about the universe 🌌. 
                 </li>
                 <li className="text-justify py-1">
-                    💡 I am lifelong learner and I love to learn and explore new technologies. Since my Bachelor's I have explored various fields
-                    like Data Science, Web Development and recently I have started to explore the world of Android App Development.
+                    💡 I am lifelong learner and I love to learn and explore new technologies. 
                 </li>
             </ol>
         </div>  

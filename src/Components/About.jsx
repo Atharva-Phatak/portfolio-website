@@ -1,6 +1,6 @@
 import React from "react";
 import PageSection from "./PageSection"
-import PersonalPhoto from "../Assets/PersonalPhoto.jpg"
+import PersonalPhoto from "../Assets/personal_photo.JPEG"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import {SiGmail} from "react-icons/si"
 import {BsFillPersonFill} from "react-icons/bs"
@@ -24,7 +24,7 @@ const About = () => {
             alt="contact us"
             className="rounded-full object-cover w-80 h-80 shadow-lg shadow-purple-500 hover:scale-105 duration-300"/>
         <p className="py-12 max-w-md text-center font-bold text-3xl underline animate-pulse">
-            Actively looking for entry level Software Developer Roles or Data Science Roles
+            ML@<a href="https://www.odaia.ai/">ODAIA</a>
         </p>
         <div className="grid grid-cols-4 mx-auto gap-10">
             <button className="flex items-12enter justify-center rounded-full shadow-md  shadow-[#0CAFFF] hover:scale-110 duration-200 p-3 
@@ -51,10 +51,10 @@ const About = () => {
                     👋 Hi, my name is Atharva Phatak.
                 </li>
                 <li className="text-justify py-1">
-                    🎓 I am currently pursuing my Master's in Computer Science at Lakehead University and will be graduating in April 2023.
+                    🎓 I am currently working as a Machine Learning Engineer at ODAIA working in the pharma domain.
                 </li>
                 <li className="text-justify py-1">
-                    👨‍💻 I am currenty working as a Research Assistant at <>&nbsp;</> 
+                    👨‍💻 Previously I was Research Assistant at <>&nbsp;</> 
                     <a className = "underline text-blue-600" href="https://datalab.science/">DaTALab</a><>&nbsp;</> and my research is focused in applications of Text Simplification methods to empower medical research.
                 </li>
                 <li className="text-justify py-1">

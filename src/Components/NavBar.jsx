@@ -24,7 +24,7 @@ const NavBar = ({isMenuDisplayed, setMenuDisplay}) => {
     return (
       <>
         <div className="absolute backdrop-blur-none w-full h-24 text-white z-20">
-          <div className="flex  justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
+          <div className="flex justify-between items-center max-w-screen-xl mx-auto px-8 h-full">
             <div>
               <h1 className="text-white tracking-widest text-3xl font-extrabold">Atharva Phatak</h1>
             </div>

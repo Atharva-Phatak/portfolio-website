@@ -1,6 +1,6 @@
 import React from "react";
 import PageSection from "./PageSection"
-import PersonalPhoto from "../Assets/PersonalPhoto.jpg"
+import PersonalPhoto from "../Assets/personal_photo.JPEG"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import {SiGmail} from "react-icons/si"
 import {BsFillPersonFill} from "react-icons/bs"
